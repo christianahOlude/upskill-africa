@@ -15,6 +15,7 @@ export default function Navbar() {
             <div className={styles.container}>
                 <div className={styles.navContent}>
 
+
                     <div className={styles.logo}>
                         <img src={upskill} alt="Upskill-LogoIcon" className={styles.logoImg}/>
                     </div>
