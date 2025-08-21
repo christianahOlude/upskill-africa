@@ -2,16 +2,16 @@ import React from 'react';
 import underline from "../assets/underline.png";
 import man from "../assets/man.png";
 import styles from '../css/web3Section.module.css';
-import img from "../assets/img.png";
+import curl from "../assets/curl.png";
 
 export default function Web3Section() {
   return (
       <div>
         <div className={styles.web3Section}>
           <div className={styles.web3Content}>
-            <h2>Why <span>Web3</span></h2>
+            <h2 style={{fontFamily: "Helvetica, Arial, sans-serif"}}>Why <span>Web3</span></h2>
             <img src={underline} alt="underline" className={styles.underline}/>
-            <p>
+            <p style={{fontFamily: "Helvetica, Arial, sans-serif", fontSize: "18px",color: "#2C2C2C",lineHeight: "1.6",fontWeight: "400"}}>
               Web3 is still in its early stages, and this is Africa’s <br />
               opportunity to be early adopters—not just followers. <br />
               Unlike Web2, where Africa lagged behind, Web3 presents <br />
@@ -24,7 +24,7 @@ export default function Web3Section() {
             <img src={man} alt="man" />
           </div>
         </div>
-          <img src={img} alt="img" width={588} style={{marginRight: "-50%"}}/>
+          <img src={curl} alt="curl" width={588} style={{marginRight: "-50%"}}/>
       </div>
   );
 }
