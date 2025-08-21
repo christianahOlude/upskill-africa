@@ -1,0 +1,101 @@
+.aboutContainer {
+  padding: 10%;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.aboutText {
+    padding-bottom: 10%;
+  margin-left: 10%;
+  flex: 1;
+  min-width: 280px;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.arrowIcon {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.aboutDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.aboutButton {
+  padding: 10px 20px;
+  background-color: #22c55e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.aboutButton:hover {
+  background-color: #16a34a;
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 1024px) {
+  .aboutTitle {
+    font-size: 2rem;
+  }
+
+  .arrowIcon {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutText {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .aboutTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutTitle {
+    font-size: 1.5rem;
+  }
+
+  .arrowIcon {
+    width: 40px;
+  }
+
+  .aboutDescription {
+    font-size: 0.9rem;
+  }
+
+  .aboutButton {
+    width: 100%;
+    padding: 12px;
+  }
+}
