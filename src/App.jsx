@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from "./components/navbar.jsx";
 import React from "react";
 import HeroSection from "./components/heroSection.jsx";
+import Web3Section from "./components/web3Section.jsx";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
         <Navbar/>
         <HeroSection/>
+        <Web3Section/>
     </>
   )
 }
