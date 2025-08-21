@@ -1,0 +1,298 @@
+/* OurMission.css */
+
+.ourMissionContainer {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* Mission Title Section */
+.missionTitleSection {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.missionTitle {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  color: #2d3436;
+  line-height: 1.2;
+}
+
+.missionHighlight {
+  color: #F04824;
+}
+
+.titleUnderline {
+  width: clamp(200px, 30vw, 30px);
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mission Cards Container */
+.missionCardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* Individual Mission Card */
+.missionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: 15px;
+  padding: 30px 24px;
+  transition: all 0.3s ease;
+  max-width: 320px;
+  min-height: 180px;
+  flex: 1;
+  border: 2px solid;
+  position: relative;
+}
+
+/* First card - Yellow theme */
+.missionCard:nth-child(1) {
+  background-color: #fffef7;
+  border-color: #ffd700;
+}
+
+/* Second card - Teal theme */
+.missionCard:nth-child(2) {
+  background-color: #f0ffff;
+  border-color: #00D47D;
+}
+
+/* Third card - Orange theme */
+.missionCard:nth-child(3) {
+  background-color: #fff5f0;
+  border-color: #ff6b47;
+}
+
+.missionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Icon Wrapper */
+.missionIconWrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+/* Mission Icons - Simple outlined icons */
+.missionIcon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* First card icon - Yellow */
+.missionCard:nth-child(1) .missionIcon {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(100%) saturate(1000%) hue-rotate(5deg) brightness(100%) contrast(100%);
+}
+
+/* Second card icon - Teal */
+.missionCard:nth-child(2) .missionIcon {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(100%) saturate(2000%) hue-rotate(160deg) brightness(90%) contrast(100%);
+}
+
+/* Third card icon - Orange */
+.missionCard:nth-child(3) .missionIcon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(100%) saturate(1000%) hue-rotate(10deg) brightness(100%) contrast(100%);
+}
+
+/* Mission Text */
+.missionText {
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #2d3436;
+  margin: 0;
+    font-size: 20px;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .ourMissionContainer {
+    padding: 40px 15px;
+  }
+
+  .missionTitleSection {
+    margin-bottom: 50px;
+  }
+
+  .missionCardsContainer {
+    gap: 28px;
+  }
+
+  .missionCard {
+    max-width: 100%;
+    min-height: 170px;
+    padding: 26px 22px;
+  }
+
+  .missionText {
+    font-size: 1rem;
+  }
+
+  .missionIconWrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+  }
+
+  .missionIcon {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .ourMissionContainer {
+    padding: 30px 10px;
+  }
+
+  .missionTitleSection {
+    margin-bottom: 40px;
+  }
+
+  .missionCardsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .missionCard {
+    width: 100%;
+    max-width: 290px;
+    min-height: 150px;
+    padding: 22px 18px;
+  }
+
+  .missionText {
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .missionIconWrapper {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+  }
+
+  .missionIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .titleUnderline {
+    width: clamp(150px, 25vw, 200px);
+  }
+}
+
+/* Large Desktop View */
+@media (min-width: 1200px) {
+  .missionCardsContainer {
+    gap: 36px;
+  }
+
+  .missionCard {
+    max-width: 340px;
+    min-height: 200px;
+    padding: 36px 28px;
+  }
+
+  .missionText {
+    font-size: 1.2rem;
+  }
+
+  .missionIconWrapper {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 35px;
+  }
+
+  .missionIcon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Animation for cards entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.missionCard {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.mission-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.missionCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.missionCard:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Remove the gradient top border and focus states that don't match the design */
+/* Focus states for accessibility */
+.missionCard:focus {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+.missionCard:nth-child(1):focus {
+  outline-color: #ffd700;
+}
+
+.missionCard:nth-child(2):focus {
+  outline-color: #40e0d0;
+}
+
+.missionCard:nth-child(3):focus {
+  outline-color: #ff6b47;
+}
+
+/* Print styles */
+@media print {
+  .missionCard {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+
+  .missionCardsContainer {
+    gap: 20px;
+  }
+}

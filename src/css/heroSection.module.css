@@ -57,6 +57,8 @@
     line-height: 1.1;
     letter-spacing: -2px;
     justify-items: center;
+    position: relative;
+    right: 100px;
 }
 
 .titleWithLine {
@@ -78,7 +80,7 @@
 .curveDecoration {
     position: absolute;
     top: -0.1px;
-    right: -80px;
+    right: 20px;
     width: 120px;
     height: 120px;
     z-index: 1;
@@ -88,11 +90,13 @@
 .description {
     max-width: 600px;
     margin: 40px auto;
+    position: relative;
+    right: 100px;
 }
 
 .description p {
     font-size: 18px;
-    color: #666666;
+    color: #2C2C2C;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -103,10 +107,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    position: relative;
+    right: 100px;
 }
 
 .btn {
-    padding: 16px 32px;
+    padding: 12px 16px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
@@ -163,7 +169,9 @@
 /* Responsive Design */
 @media (max-width: 1200px) {
     .hero {
-        padding: 60px 30px;
+        padding: 0;
+        position: relative;
+        left: 100px;
     }
 
     .mainTitle {
@@ -177,11 +185,11 @@
     }
 
     .leftImage, .rightImage {
-        flex: 0 0 200px;
+       display: none;
     }
 
     .leftImage img, .rightImage img {
-        max-width: 200px;
+        display: none;
     }
 }
 
@@ -198,11 +206,7 @@
         min-height: auto;
     }
 
-    .leftImage, .rightImage {
-        order: 3;
-        flex: none;
-        margin: 0;
-    }
+
 
     .centerContent {
         order: 1;
