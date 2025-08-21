@@ -1,0 +1,265 @@
+.background {
+    background-image: url("../assets/Frame.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /*width: 100vw;*/
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 160px);
+    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.leftImage {
+    flex: 0 0 250px;
+    z-index: 2;
+    margin-left: -70px;
+}
+
+.leftImage img {
+    width: 100%;
+    height: auto;
+    /*max-width: 250px;*/
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+.centerContent {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 3;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.titleContainer {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.mainTitle {
+    font-size: clamp(36px, 8vw, 70px);
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000000;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    justify-items: center;
+}
+
+.titleWithLine {
+    position: relative;
+    display: inline-block;
+}
+
+.underline {
+    position: absolute;
+    bottom: -15px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 55%;
+    max-width: 90%;
+    height: auto;
+    z-index: 1;
+}
+
+.curveDecoration {
+    position: absolute;
+    top: -0.1px;
+    right: -80px;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.description {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.description p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primaryBtn {
+    background-color: #22c55e;
+    color: #ffffff;
+    border: 2px solid #22c55e;
+}
+
+.primaryBtn:hover {
+    background-color: #16a34a;
+    border-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
+}
+
+.secondaryBtn {
+    background-color: transparent;
+    color: #666666;
+    border: 2px solid #e5e5e5;
+}
+
+.secondaryBtn:hover {
+    border-color: #22c55e;
+    color: #22c55e;
+    transform: translateY(-2px);
+}
+
+.rightImage {
+    position: absolute;
+    right: -60px;
+    top: 300px;
+    width: 250px;
+    z-index: 2;
+}
+
+.rightImage img {
+    width: 100%;
+
+    max-width: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero {
+        padding: 60px 30px;
+    }
+
+    .mainTitle {
+        font-size: clamp(32px, 6vw, 64px);
+    }
+
+    .curveDecoration {
+        right: -40px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .leftImage, .rightImage {
+        flex: 0 0 200px;
+    }
+
+    .leftImage img, .rightImage img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .background {
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+        min-height: auto;
+    }
+
+    .leftImage, .rightImage {
+        order: 3;
+        flex: none;
+        margin: 0;
+    }
+
+    .centerContent {
+        order: 1;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    .mainTitle {
+        font-size: clamp(28px, 8vw, 48px);
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .curveDecoration {
+        display: none;
+    }
+
+    .leftImage img, .rightImage img {
+        width: 200px;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .underline {
+        width: 200px;
+        bottom: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .mainTitle {
+        font-size: clamp(24px, 7vw, 36px);
+        letter-spacing: -1px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .leftImage img, .rightImage img {
+        width: 180px;
+        max-width: 180px;
+    }
+
+    .underline {
+        width: 150px;
+    }
+}
