@@ -5,6 +5,7 @@ import HeroSection from "./components/heroSection.jsx";
 import Web3Section from "./components/web3Section.jsx";
 import AboutUsSection from "./components/aboutUsSection.jsx";
 import OurMission from "./components/ourMission.jsx";
+import Impact from "./components/impactSection.jsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Web3Section/>
         <AboutUsSection/>
         <OurMission/>
+        <Impact/>
     </>
   )
 }
