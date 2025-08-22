@@ -4,7 +4,7 @@ import upskills from "../assets/UpskillAfricaLogoIcon.png";
 
 export default function BuildAndEarn() {
     return (
-        <div>
+        <div style={{padding: '100px 0'}}>
             <div style={{justifyContent: 'center', textAlign: 'center', padding: '50px 0',  fontFamily: 'Helvetica, Arial, sans-serif'}}>
                 <h1>Build. Earn. Lead. <br/>Africa's <span style={{fontFamily: '', color: '#F04824'}}>Web3 Future</span></h1>
                 <p>Africa's Web3 Opportunity</p>
