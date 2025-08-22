@@ -268,7 +268,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .impact-content-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
   }
 
@@ -380,6 +380,7 @@
 
   .section-title {
     font-size: 1.1rem;
+      font-family: Helvetica, Arial, sans-serif;
   }
 
   .section-description {
