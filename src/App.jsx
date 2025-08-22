@@ -7,6 +7,7 @@ import AboutUsSection from "./components/aboutUsSection.jsx";
 import OurMission from "./components/ourMission.jsx";
 import Impact from "./components/impactSection.jsx";
 import JoinMovement from "./components/joinMovement.jsx";
+import BuildAndEarn from "./components/buildAndEarn.jsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <OurMission/>
         <Impact/>
         <JoinMovement/>
+        <BuildAndEarn/>
     </>
   )
 }
