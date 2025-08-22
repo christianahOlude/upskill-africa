@@ -6,6 +6,7 @@ import Web3Section from "./components/web3Section.jsx";
 import AboutUsSection from "./components/aboutUsSection.jsx";
 import OurMission from "./components/ourMission.jsx";
 import Impact from "./components/impactSection.jsx";
+import JoinMovement from "./components/joinMovement.jsx";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <AboutUsSection/>
         <OurMission/>
         <Impact/>
+        <JoinMovement/>
     </>
   )
 }

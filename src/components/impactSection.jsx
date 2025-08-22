@@ -1,78 +1,53 @@
-import React from 'react';
-import impact from '../assets/impact.png';
-import handsOn from '../assets/handsOn.png';
-import meetups from '../assets/meetups.png';
-import community from '../assets/community.png';
-import programs from '../assets/programs.png';
-import placement from '../assets/placement.png';
-import support from '../assets/support.png';
-import './Impact.css';
+import React from 'react'
+import impact from '../assets/impact.png'
+import handsOn from '../assets/handsOn.png'
+import meetups from '../assets/meetups.png'
+import community from '../assets/community.png'
+import programs from '../assets/programs.png'
+import placement from '../assets/placement.png'
+import support from '../assets/support.png'
 
-export default function Impact() {
-  return (
-    <section className="impact-container">
-      {/* Title Section */}
-      <div className="impact-title-section">
-        <img src={impact} alt="impact" className="impact-icon" />
-        <h2 className="impact-title">
-          How We're Making<br/>
-          an <span className="impact-highlight">Impact</span>
-        </h2>
-      </div>
-
-      {/* Content Grid */}
-      <div className="impact-content-grid">
-
-        {/* Left Section - Physical Meetups */}
-        <div className="impact-card left-card">
-          <div className="card-content">
-            <img src={handsOn} alt="Physical Meetups" className="section-icon" />
-            <h3 className="section-title">Physical Meetups & Virtual<br/>Workshops</h3>
-            <p className="section-description">We've successfully hosted events to<br/>educate and inspire.</p>
-            <div className="meetup-image">
-              <img src={meetups} alt="meetups" width={300} className="meetup-photo" />
+export default function Impact () {
+    return (
+        <section style={{ paddingTop: '50px', textAlign: 'center', fontFamily: "Helvetica, Arial, sans-serif" }}>
+            <div style={{ display: 'inline-block' }}>
+                <img src={impact} alt="impact" style={{ display: 'block', margin: '0 auto 12px', position: "relative", right: "190px", top: "40px" }} width={"10%"} />
+                <h2 style={{ fontSize: '40px', margin: 0 }}>
+                    How We're Making <br/>
+                    an <span style={{ color: '#02BE71' }}>Impact</span>
+                </h2>
             </div>
-          </div>
-        </div>
+            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "80px", paddingTop: "60px", marginLeft: "130px", marginRight: "130px"}}>
+                <div>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '12px' }}>
+                        <img src={handsOn} alt="handsOn" width={"10%"}/>
+                        <p style={{fontSize: "20px", fontFamily: "Helvetica", textAlign: "start"}}>Physical Meetups & Virtual <br/>
+                        Workshops</p>
+                        <p style={{fontFamily: "Helvetica", textAlign: "start"}}>We've successfully hosted events to <br/>educate and inspire</p>
 
-        {/* Center Section - Community Circle */}
-        <div className="impact-card center-card">
-          <div className="card-content">
-            <div className="community-circle">
-              <div className="center-logo">
-                <div className="upskill-logo"></div>
-              </div>
+                    </div>
+                    <div>
+                         <img src={meetups} alt="meetups" width={"100%"}/>
+                    </div>
+                </div>
 
-              {/* Profile circles around the center */}
-              <div className="profile-circle profile-1"></div>
-              <div className="profile-circle profile-2"></div>
-              <div className="profile-circle profile-3"></div>
-              <div className="profile-circle profile-4"></div>
-              <div className="profile-circle profile-5"></div>
-              <div className="profile-circle profile-6"></div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '12px' }}>
+                    <img src={community} alt="community" width={"100%"} />
+                    <img src={programs} alt="programs" width={"10%"} />
+                    <p style={{fontSize: "20px", fontFamily: "Helvetica", textAlign: "start"}}>University & Tech Community <br/>Programs</p>
+                </div>
+                <div>
+                    <div>
+                        <img src={placement} alt="placement" width={"100%"}/>
+                    </div>
+                    <div>
+                        <img src={support} alt="support" width={"10%"}/>
+                        <p style={{fontSize: "20px"}}>Job Placement Support</p>
+                        <p>Helping skilled Africans secure roles in the fast-growing Blockchain industry.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+    )
 
-            <div className="community-section-bottom">
-              <img src={programs} alt="Community Programs" className="section-icon" />
-              <h3 className="section-title">University & Tech Community<br/>Programs</h3>
-              <p className="section-description">Bringing Web3 education to campuses<br/>and hubs across Africa.</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Section - Job Placement */}
-        <div className="impact-card right-card">
-          <div className="card-content">
-            <div className="job-placement-image">
-              <img src={placement} alt="job placement" width={300} className="job-photo" />
-            </div>
-            <img src={support} alt="Job Placement" className="section-icon job-icon" />
-            <h3 className="section-title">Job Placement Support</h3>
-            <p className="section-description">Helping skilled Africans secure roles in<br/>the fast-growing Blockchain industry.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  );
 }
