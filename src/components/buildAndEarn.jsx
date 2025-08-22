@@ -1,12 +1,12 @@
 import React from 'react'
 import linear from "../assets/linear.png";
 import upskills from "../assets/UpskillAfricaLogoIcon.png";
-
+import styles from '../css/buildAndEarn.module.css';
 export default function BuildAndEarn() {
     return (
         <div style={{padding: '100px 0'}}>
             <div style={{justifyContent: 'center', textAlign: 'center', padding: '50px 0',  fontFamily: 'Helvetica, Arial, sans-serif'}}>
-                <h1>Build. Earn. Lead. <br/>Africa's <span style={{fontFamily: '', color: '#F04824'}}>Web3 Future</span></h1>
+                <p className={styles.text}> Build. Earn. Lead. <br/>Africa's <span style={{fontFamily: '', color: '#F04824'}}>Web3 Future</span></p>
                 <p>Africa's Web3 Opportunity</p>
             </div>
             <div style={{display: 'flex', justifyContent: 'space-between', margin: '0 100px'}}>

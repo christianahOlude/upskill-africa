@@ -4,18 +4,9 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.headingWrapper {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 40px;
-}
-
 .impactIcon {
-  width: 60px;
-  display: block;
-  margin: 0 auto 12px;
-  position: relative;
-  top: 20px;
+  width: 50px;
+  padding-bottom: 30px;
 }
 
 .heading {
@@ -39,6 +30,12 @@
   gap: 12px;
   align-items: flex-start;
   text-align: start;
+  background: #fdfafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 20px auto;
 }
 
 .cardImage {
