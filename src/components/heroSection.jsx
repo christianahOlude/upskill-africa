@@ -4,7 +4,6 @@ import lady from "../assets/lady.png";
 import curve from "../assets/curve.png";
 import line from "../assets/line.png";
 import laptop from "../assets/laptop.png";
-import curves from "../assets/curves.png";
 
 export default function HeroSection() {
     return (
@@ -58,7 +57,7 @@ export default function HeroSection() {
                         <img src={laptop} alt="laptop" width={300} height={400} />
                     </div>
             </div>
-            <img src={curves} alt="curves" width={300} />
+            {/*<img src={curves} alt="curves" width={300} />*/}
         </div>
     );
 }
