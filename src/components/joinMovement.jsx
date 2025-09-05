@@ -6,9 +6,9 @@ import styles from "../css/joinMovement.module.css";
 export default function JoinMovement() {
   return (
     <div className={styles.joinContainer}>
-      <div className={styles.curlsWrapper}>
-        <img src={curls} alt="curls" />
-      </div>
+      {/*<div >*/}
+        <img src={curls} alt="curls" className={styles.curlsWrapper}/>
+      {/*</div>*/}
 
       <div className={styles.contentGrid}>
         <div className={styles.textSection}>

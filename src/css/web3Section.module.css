@@ -11,14 +11,15 @@
 }
 
 .web3Content {
-    margin-top: 20px;
-    margin-left: 0; /* Was 120px; remove to prevent overflow via combined margins */
+    margin-top: 10%;
+    margin-left: 0;
     flex: 1;
-    /*position: relative;*/ /* if you previously anchored absolute children here, keep it */
+    /*position: relative;*/
 }
 
 .web3Content h2 {
-    font-size: 40px;
+    font-family: inherit;
+    font-size: 60px;
     margin: 0;
 }
 
@@ -26,13 +27,40 @@
     color: #22c55e;
 }
 
-.web3Content img {
+/* Underline specifically for the Web3 word */
+.web3Word {
+    position: relative;
+    display: inline-block; /* shrink to word width */
+    padding-bottom: 8px; /* reserve space for underline */
+}
+
+.wordUnderline {
     position: absolute;
-    top: 0; /* Anchor vertically to avoid jitter */
-    left: 50%; /* Use stable centering instead of a percentage offset */
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* center under the word width */
+    bottom: -6px; /* small gap under baseline */
+    width: 100%; /* let image scale to word width */
+    max-width: 120px; /* cap like previous */
+    height: auto;
+    display: block;
+}
+
+/* Keep other images (like the side illustration) unaffected */
+.web3Content > img {
+    display: block;
+    margin: 8px 0 0; /* small gap under the h2 and left-aligned */
     width: 120px;
     height: auto;
+}
+
+/* Decorative curl under the section, centered and without horizontal overflow */
+.curlDecoration {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0; /* small gap from section, centered */
+    pointer-events: none; /* purely decorative */
 }
 
 .web3Content p {
@@ -54,11 +82,11 @@
 }
 
 .web3Image img {
-    width: 500px;
+    width: 400px;
     max-width: 100%; /* Prevent image from exceeding container width */
     height: auto;
     margin-top: 40px;
-    margin-right: 0;  /* Avoid pushing layout wider than container */
+    margin-right: 0;
 }
 
 @media (max-width: 1024px) {

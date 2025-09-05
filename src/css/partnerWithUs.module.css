@@ -8,9 +8,9 @@
 
 .container1 {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
-  gap: 20px; /* space between the columns */
-  height: 100vh; /* full screen height (optional) */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
 }
 
 

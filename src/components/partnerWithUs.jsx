@@ -121,7 +121,7 @@ export default function PartnerWithUs() {
                     left: isMobile ? "0" : "100px",
                 }}
             >
-                <img src={liner} className="liner-img" alt="liner" height={"2%"} width={"100%"}/>
+                <img src={liner} className="liner-img" alt="liner" height={"2%"} width={"80%"}/>
                 <p className="revolution-text">🚀 Africa's Web3 Revolution Starts Here – Be Part of It!</p>
             </div>
 

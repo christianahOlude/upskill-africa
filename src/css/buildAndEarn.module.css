@@ -1,5 +1,5 @@
 .container {
-  padding: 100px 0;
+  padding: 10% 0;
 }
 
 .header {
@@ -9,12 +9,12 @@
 }
 
 .text {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 50px;
 }
 
 .highlight {
   color: #F04824;
+    font-family: monospace;
 }
 
 .grid {

@@ -9,14 +9,13 @@ export default function Web3Section() {
     <div>
       <div className={styles.web3Section}>
         <div className={styles.web3Content}>
-          <h2 style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
-            Why <span>Web3</span>
+          <h2>
+            Why <span className={styles.web3Word}>Web3<img src={underline} alt="underline" className={styles.wordUnderline} /></span>
           </h2>
-          <img src={underline} alt="underline" />
           <p
             style={{
               fontFamily: "Helvetica, Arial, sans-serif",
-              fontSize: "18px",
+              fontSize: "20px",
               color: "#2C2C2C",
               lineHeight: "1.6",
               fontWeight: "400",
@@ -34,7 +33,7 @@ export default function Web3Section() {
           <img src={man} alt="man" />
         </div>
       </div>
-       <img src={curl} alt="curl" width={480} style={{ marginRight: "-30%" }} />
+      <img src={curl} alt="curl" width={480} className={styles.curlDecoration} />
     </div>
   );
 }

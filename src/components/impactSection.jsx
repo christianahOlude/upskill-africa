@@ -13,7 +13,7 @@ export default function Impact() {
     <section className={styles.impactSection}>
         <div style={{display: 'flex', justifyContent: 'center', padding: '50px 0'}}>
 
-            <img src={impact} alt="impact" className={styles.impactIcon} />
+            <img src={impact} alt="impact" width={60} height={35}/>
             <h2 className={styles.heading}>
               How We're Making <br />
               an <span>Impact</span>
@@ -45,6 +45,8 @@ export default function Impact() {
           <p className={styles.cardTitle}>
             University & Tech Community <br /> Programs
           </p>
+            <p style={{fontSize: '15px'}}>Bringing Web3 education to campuses <br/>
+                and hubs across Africa.</p>
         </div>
         {/*Third column*/}
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '20px'}}>
