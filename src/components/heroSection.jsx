@@ -58,7 +58,7 @@ export default function HeroSection() {
                         <img src={laptop} alt="laptop" width={300} height={400} />
                     </div>
             </div>
-            <img src={curves} alt="curves" width={300} className={styles.curves}/>
+            {/*<img src={curves} alt="curves" width={300} className={styles.curves}/>*/}
         </div>
     );
 }
