@@ -18,8 +18,8 @@
 }
 
 .web3Content h2 {
-    font-family: inherit;
-    font-size: 60px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .web3Content p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -112,6 +112,14 @@
 }
 
 @media (max-width: 768px) {
+    .web3Section {
+    padding: 10px 0 20px 0; /* Reduce vertical padding */
+    gap: 16px; /* Reduce gap between content and image */
+  }
+  .web3Content {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
     .web3Content h2 {
         font-size: 30px;
     }

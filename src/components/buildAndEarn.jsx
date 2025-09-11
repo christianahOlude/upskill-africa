@@ -11,7 +11,7 @@ export default function BuildAndEarn() {
                     Build. Earn. Lead. <br />
                     Africa's <span className={styles.highlight}>Web3 Future</span>
                 </p>
-                <p>Africa's Web3 Opportunity</p>
+                <p className={styles.web}>Africa's Web3 Opportunity</p>
             </div>
 
             <div className={styles.grid}>

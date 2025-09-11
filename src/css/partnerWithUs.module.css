@@ -128,28 +128,52 @@
 
 /* Mobile Landscape */
 @media screen and (max-width: 768px) {
+    /*@media screen and (max-width: 768px) {*/
+  .partner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .center-image-container,
+  .main-content-container,
+  .left-section,
+  .right-section,
+  .bottom-section {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
   .partner-content {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px 0;
+    /*padding-right: 25px;*/
+      display: flex;
+    flex-direction: column;
+    align-items: center;      /* Center horizontally */
+    justify-content: center;  /* Center vertically */
+    text-align: center;
   }
 
   .center-img {
     width: 25%;
   }
 
-  .main-content-container {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
+  /*.main-content-container {*/
+  /*  flex-direction: column;*/
+  /*  gap: 2rem;*/
+  /*  text-align: center;*/
+  /*}*/
 
-  .left-section {
-    text-align: center;
-  }
+  /*.left-section {*/
+  /*  text-align: center;*/
+  /*}*/
 
-  .right-section {
-    text-align: center;
-  }
+  /*.right-section {*/
+  /*  text-align: center;*/
+  /*}*/
 
   .partner-text {
     font-size: 16px;

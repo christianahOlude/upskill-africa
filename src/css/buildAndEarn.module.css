@@ -9,9 +9,12 @@
 }
 
 .text {
-  font-size: 50px;
+  font-size: 20px;
+    font-weight: 400;
 }
-
+.web{
+    font-family: "Noto Sans Old Italic";
+}
 .highlight {
   color: #F04824;
     font-family: monospace;
@@ -35,12 +38,12 @@
 }
 
 .title {
-  font-size: 25px;
+  font-size: 20px;
   margin: 10px 0;
 }
 
 .desc {
-  font-size: 20px;
+  font-size: 17px;
   color: #2C2C2C;
 }
 

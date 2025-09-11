@@ -89,7 +89,7 @@ export default function PartnerWithUs() {
                 >
                     <div className="left-section">
                         <img src={upskill} className="upskill-logo" alt="upskill"/>
-                        <p className="partner-text" style={{color: '#2C2C2C', fontSize: '20px', fontFamily: 'Helvetica, Arial, sans-serif'}}>Partner with us (Schools,<br/>
+                        <p className="partner-text" style={{color: '#2C2C2C', fontSize: '18px', fontFamily: 'Helvetica, Arial, sans-serif'}}>Partner with us (Schools,<br/>
                             Organisations, Sponsors)</p>
                         <div className="social-icons-container">
                             <img src={linkedIn} className="social-icon" alt="linkedIn" width={20} style={{paddingRight: '10px'}}/>

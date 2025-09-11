@@ -15,7 +15,7 @@ export default function Web3Section() {
           <p
             style={{
               fontFamily: "Helvetica, Arial, sans-serif",
-              fontSize: "20px",
+              fontSize: "18px",
               color: "#2C2C2C",
               lineHeight: "1.6",
               fontWeight: "400",

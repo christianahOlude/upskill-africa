@@ -4,7 +4,7 @@ import lady from "../assets/lady.png";
 import curve from "../assets/curve.png";
 import line from "../assets/line.png";
 import laptop from "../assets/laptop.png";
-import curves from "../assets/curves.png"
+// import curves from "../assets/curves.png"
 
 export default function HeroSection() {
     return (
