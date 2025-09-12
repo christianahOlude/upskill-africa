@@ -209,9 +209,7 @@ body {
   }
     .hero {
         flex-direction: column;
-        /*padding: 40px 20px;*/
         text-align: center;
-        /*gap: 30px;*/
         min-height: auto;
         padding: 20px 10px 30px 10px;
         gap: 16px;

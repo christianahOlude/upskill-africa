@@ -13,7 +13,7 @@ export default function Impact() {
     <section className={styles.impactSection}>
         <div style={{display: 'flex', justifyContent: 'center', padding: '50px 0'}}>
 
-            <img src={impact} alt="impact" width={60} height={35}/>
+            <img src={impact} alt="impact" width={40} height={35}/>
             <h2 className={styles.heading}>
               How We're Making <br />
               an <span>Impact</span>
