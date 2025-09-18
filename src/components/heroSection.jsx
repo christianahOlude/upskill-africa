@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styles from "../css/heroSection.module.css";
 import lady from "../assets/lady.png";
 import curve from "../assets/curve.png";
@@ -7,8 +7,18 @@ import laptop from "../assets/laptop.png";
 // import curves from "../assets/curves.png"
 
 export default function HeroSection() {
+      const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
     return (
-        <div className={styles.background}>
+        <div style={{
+            marginBottom: isMobile ? "80px" : "140px"
+        }} className={styles.background}>
             <div className={styles.hero}>
                 {/* Left side - Lady image */}
                 <div className={styles.leftImage}>

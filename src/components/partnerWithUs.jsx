@@ -67,8 +67,8 @@ export default function PartnerWithUs() {
   }, []);
 
     return (
-        <div className="partner-container" style={{backgroundColor: '#F0F0F0'}}>
-            <div className="center-image-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div className="partner-container" style={{backgroundColor: '#F0F0F0', width: "100%"}}>
+            <div className="center-image-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%" }}>
                 <img src={img} className="center-img" width={"15%"} alt="img" />
             </div>
 
@@ -82,16 +82,23 @@ export default function PartnerWithUs() {
                 <div
                     style={{
                         display: "flex",
+                        width: "100%",
                         justifyContent: isMobile ? "flex-start" : "center",
                         position: "relative",
-                        right: isMobile ? "0" : "100px",
+                        left: isMobile ? "" : "100px",
                     }}
                 >
-                    <div className="left-section">
+                    <div style={{ width: "100%" }} className="left-section">
                         <img src={upskill} className="upskill-logo" alt="upskill"/>
-                        <p className="partner-text" style={{color: '#2C2C2C', fontSize: '18px', fontFamily: 'Helvetica, Arial, sans-serif'}}>Partner with us (Schools,<br/>
+                        <p className="partner-text" style={{color: '#2C2C2C', fontSize: '18px', fontFamily: 'Helvetica, Arial, sans-serif',
+                            textAlign: isMobile ? "center" : "left"
+                        }}>Partner with us (Schools,<br />
                             Organisations, Sponsors)</p>
-                        <div className="social-icons-container">
+                        <div
+                            style={{
+                                textAlign: isMobile ? "center" : "left",
+                            }}
+                            className="social-icons-container">
                             <img src={linkedIn} className="social-icon" alt="linkedIn" width={20} style={{paddingRight: '10px'}}/>
                             <img src={facebook} className="social-icon" alt="facebook" width={20} style={{paddingRight: '10px'}}/>
                             <img src={x} className="social-icon" alt="x" width={20} style={{marginRight: '10px'}}/>
@@ -101,11 +108,11 @@ export default function PartnerWithUs() {
                 </div>
                 <div
                     style={{
-                        display: "flex",
-                        justifyContent: isMobile ? "flex-start" : "center",
-                        position: "relative",
-                        left: isMobile ? "0" : "100px",
                         // alignItems: "center",
+                        width: "100%",
+                        textAlign: isMobile ? "center" : "left",
+                        position: "relative",
+                        left: isMobile ? "" : "300px",
                     }}
                 >
                     <div className="right-section">
@@ -119,38 +126,12 @@ export default function PartnerWithUs() {
                 style={{
                     position: "relative",
                     left: isMobile ? "0" : "100px",
+                    textAlign: isMobile ? "center" : "left",
                 }}
             >
                 <img src={liner} className="liner-img" alt="liner" height={"2%"} width={"80%"}/>
                 <p className="revolution-text">🚀 Africa's Web3 Revolution Starts Here – Be Part of It!</p>
             </div>
-
-            {/*<div className="partner-content" style={{paddingLeft: '50px', paddingRight: '50px', paddingBottom: "10", fontFamily: 'Helvetica, Arial, sans-serif'}}>*/}
-            {/*    <div className="center-image-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>*/}
-            {/*        <img src={img} className="center-img" width={"15%"} alt="img" />*/}
-            {/*    </div>*/}
-            {/*    <div className="main-content-container" style={{ display: 'flex', justifyContent: 'space-between'}}>*/}
-            {/*        <div className="left-section">*/}
-            {/*            <img src={upskill} className="upskill-logo" alt="upskill"/>*/}
-            {/*            <p className="partner-text" style={{color: '#2C2C2C', fontSize: '20px', fontFamily: 'Helvetica, Arial, sans-serif'}}>Partner with us (Schools,<br/>*/}
-            {/*                Organisations, Sponsors)</p>*/}
-            {/*            <div className="social-icons-container">*/}
-            {/*                <img src={linkedIn} className="social-icon" alt="linkedIn" width={20} style={{paddingRight: '10px'}}/>*/}
-            {/*                <img src={facebook} className="social-icon" alt="facebook" width={20} style={{paddingRight: '10px'}}/>*/}
-            {/*                <img src={x} className="social-icon" alt="x" width={20} style={{marginRight: '10px'}}/>*/}
-            {/*                <img src={insta} className="social-icon" alt="insta" width={20} style={{marginRight: '10px'}}/>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        <div className="right-section">*/}
-            {/*            <p className="contact-item"><img src={phone} className="contact-icon" alt="phone" width={15}/> +234 103 148 469</p>*/}
-            {/*            <p className="contact-item"><img src={email} className="contact-icon" alt="email" width={15}/>upskillafrica01@gmail.com</p>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="bottom-section">*/}
-            {/*        <img src={liner} className="liner-img" alt="liner" height={"2%"} width={"100%"}/>*/}
-            {/*        <p className="revolution-text">🚀 Africa's Web3 Revolution Starts Here – Be Part of It!</p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </div>
     )
 }
