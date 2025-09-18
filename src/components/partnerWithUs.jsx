@@ -77,6 +77,7 @@ export default function PartnerWithUs() {
                 display: "grid",
                 gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
                 gap: "20px",
+                    fontFamily:  'Helvetica, Arial, sans-serif',
                 }}
             >
                 <div
