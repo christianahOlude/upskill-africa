@@ -116,8 +116,8 @@ export default function PartnerWithUs() {
                     }}
                 >
                     <div className="right-section">
-                        <p className="contact-item"><img src={phone} className="contact-icon" alt="phone" width={15}/> +234 103 148 469</p>
-                        <p className="contact-item"><img src={email} className="contact-icon" alt="email" width={15}/>upskillafrica01@gmail.com</p>
+                        <p className="contact-item"><img src={phone} alt="phone" width={15}/> +234 103 148 469</p>
+                        <p className="contact-item"><img src={email} alt="email" width={15}/>upskillafrica01@gmail.com</p>
                     </div>
                 </div>
             </div>
